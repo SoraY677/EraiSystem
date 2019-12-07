@@ -1,17 +1,16 @@
 <template>
   <div>
-    <input @change="$emit('change')" v-model="todo.isDone" type="checkbox" />
-    <label>{{ todo.text }}</label>
+    <div>{{ todo.text }}</div>
+    <b-btn @click="$emit('click')">{{ todo.erai }}えらい！</b-btn>
   </div>
 </template>
-
 <script>
 export default {
   props: {
     todo: {
       type: Object,
       default() {
-        return []
+        return {}
       }
     }
   }
