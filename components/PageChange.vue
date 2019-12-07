@@ -1,12 +1,12 @@
 <template>
   <div class="page-index">
-    <nuxt-link to="/MyTodo">自分の</nuxt-link>
-    <nuxt-link to="/OtherTodo">他の人の</nuxt-link>
+    <b-nav tabs>
+      <b-nav-item href="/MyTodo">Myself</b-nav-item>
+      <b-nav-item href="/OtherTodo">Others</b-nav-item>
+    </b-nav>
   </div>
 </template>
 
 <script>
 export default {}
 </script>
-
-<style></style>
