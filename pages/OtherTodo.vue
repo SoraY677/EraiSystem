@@ -1,12 +1,14 @@
 <template>
   <div>
     <PageChange></PageChange>
+    <!-- <b-row> -->
     <EraiTodo
       v-for="todo in todos"
       :key="todo._id"
       :todo="todo"
       @click="sendErai(todo._id)"
     ></EraiTodo>
+    <!-- </b-row> -->
   </div>
 </template>
 <script>
@@ -37,10 +39,6 @@ export default {
         }
       )
       this.todos = response
-      // this.todos = [
-      //   { _id: 1, text: 'Azureでアプリを作る', isDone: false },
-      //   { _id: 2, text: 'Azureでアプリを公開する', isDone: false }
-      // ]
     },
     async sendErai(_id) {
       const todo = this.todos.find((todo) => todo._id === _id)
