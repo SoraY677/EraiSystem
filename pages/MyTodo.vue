@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageChange></PageChange>
-    <Todo checkid="hoge"></Todo>
+    <Todo checkid="hoge" backgroundcolor="backgroundcolor:#2e2e2e"></Todo>
     <TodoAdd></TodoAdd>
   </div>
 </template>
