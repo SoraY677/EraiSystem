@@ -1,12 +1,13 @@
 <template>
   <div>
     <PageChange></PageChange>
-    <Todo
+    <!-- <Todo
       v-for="todo in todos"
       :key="todo._id"
       :todo="todo"
       @change="changeTodo(todo._id)"
-    ></Todo>
+    ></Todo> -->
+    <Todo checkid="hoge" backgroundcolor="backgroundcolor:#2e2e2e"></Todo>
     <TodoAdd></TodoAdd>
   </div>
 </template>
